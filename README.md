@@ -11,7 +11,7 @@ python3 -m venv venv
 ### Activate it
 
 ```bash
-source venv/bin/activate
+source venv/bin/activategit 
 ```
 
 ```bash
