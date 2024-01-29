@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes without Product</title>
+</head>
+<body>
+    <h1>Recipes without Product or with less than 10g</h1>
+    <table border="1">
+        <tr>
+            <th>Recipe ID</th>
+            <th>Recipe Name</th>
+        </tr>
+        {% for recipe in recipes_without_product %}
+            <tr>
+                <td>{{ recipe.id }}</td>
+                <td>{{ recipe.recipe_name }}</td>
+            </tr>
+        {% endfor %}
+        {% for recipe in recipes_with_less_than_10g %}
+            <tr>
+                <td>{{ recipe.id }}</td>
+                <td>{{ recipe.recipe_name }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
